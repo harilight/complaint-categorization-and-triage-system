@@ -1,0 +1,31 @@
+Complaint,Predicted_Category
+I paid for the service but the app stopped responding midway,Subscriptions
+My order shows delivered but I never received anything,Delivery
+"Unable to reset my password, keeps throwing an error",Technical Issues
+Money was deducted but the transaction did not complete,Billing & Transaction Problems
+The application crashes whenever I open the settings page,Technical Issues
+I cancelled my order but the amount is still not refunded,Refund & Returns
+Delivery was expected last week but there is no update,Delivery
+Cannot log into my account after changing my email,Account & Profile Management
+Product arrived with missing parts and scratches,Product Integrity & Accuracy
+Payment succeeded but order confirmation never came,Billing & Transaction Problems
+App is extremely slow after the latest update,Technical Issues
+Refund request approved but money not credited yet,Refund & Returns
+Courier attempted delivery but no one contacted me,Delivery
+My profile information got changed automatically,Security and Privacy
+System shows technical error during checkout,Billing & Transaction Problems
+Order delayed multiple times and finally got cancelled,Delivery
+Account was blocked suddenly without notification,Subscriptions
+I was billed even though I cancelled the subscription,Subscriptions
+Package arrived late and the box was damaged,Delivery
+Transaction failed but amount was still debited,Billing & Transaction Problems
+Cannot access account due to security verification issue,Security and Privacy
+Shipment tracking link is not working,Delivery
+App freezes on startup screen,Technical Issues
+Return pickup was scheduled but nobody showed up,Refund & Returns
+Payment page keeps loading and never completes,Technical Issues
+My account details disappeared after update,Account & Profile Management
+Received the wrong product than what I ordered,Product Integrity & Accuracy
+Refund denied saying it violates policy,Refund & Returns
+Delivery partner marked delivered incorrectly,Delivery
+Application not opening at all today,Technical Issues
