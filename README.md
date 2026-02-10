@@ -1,26 +1,56 @@
-# Complaint Categorization and Triage System
+# 🛡️ Customer Complaint Categorization: Classic ML vs. Transformers
 
-An NLP-based system that categorizes raw e-commerce customer complaints into issue types and performs rule-based triage to assign business priorities for faster and more effective customer support.
+An automated NLP pipeline designed to classify customer complaints into specific business categories. This project explores the trade-off between traditional feature engineering (**TF-IDF + SVM**) and modern deep learning embeddings (**BERT + Logistic Regression**).
 
-## Overview
-This project aims to automate the initial handling of customer complaints by combining text classification with business-rule-based prioritization. The system helps reduce manual effort and improves response time in large-scale customer support operations.
 
-## Dataset
-The project uses an original complaints dataset (`complaints.csv`) included in this repository.
 
-- The dataset is provided in its original, unmodified form.
-- It contains raw textual complaints along with relevant metadata for categorization.
-- Any preprocessing or transformations applied are documented in the code.
+## 📌 Project Overview
+Manual categorization of customer feedback is time-consuming and prone to human error. This system automates the process by taking raw text input and predicting the most relevant category.
 
-## Methodology
-- Text preprocessing and feature extraction
-- Complaint categorization using NLP techniques
-- Rule-based triage to assign priority levels based on complaint type and severity
+### **Key Features**
+* **Dual-Model Support:** Compare results between SVM and BERT.
+* **Batch Processing:** Predict categories for entire CSV files.
+* **Real-time Inference:** A command-line interface for single-text testing.
+* **GPU Optimized:** Built with PyTorch to leverage CUDA on hardware like the NVIDIA RTX 3050 Ti.
 
-## Use Case
-This system can be applied in:
-- E-commerce customer support platforms
-- Service desk automation
-- Complaint management and prioritization systems
+---
 
-## Repository Structure
+## 🔬 Approaches Compared
+
+### **Approach 1: TF-IDF + Support Vector Machine (SVM)**
+The traditional approach focusing on word frequency and importance.
+* **How it works:** Text is cleaned and converted into a numerical matrix using **TF-IDF**. An **SVM** classifier draws a hyperplane to separate the data.
+* **Pros:** Extremely fast, simple, and works well on smaller datasets.
+* **Cons:** Doesn't understand deep semantic meaning; can be confused by wording changes.
+
+### **Approach 2: BERT + Logistic Regression**
+The deep learning-based approach focusing on semantic meaning.
+* **How it works:** Uses pretrained **`bert-base-uncased`** to extract the **[CLS] token** embedding for each complaint. A **Logistic Regression** model classifies these embeddings.
+* **Pros:** Understands context, synonyms, and handles overlapping categories better.
+* **Cons:** Slower and needs more compute (GPU recommended).
+
+---
+
+## 📊 Performance Benchmarks
+| Metric | TF-IDF + SVM | BERT + Logistic |
+| :--- | :--- | :--- |
+| **Accuracy (Approx)** | ~98% | **~99.5%** |
+| **Training Speed** | Ultra Fast | Slower (Requires GPU) |
+| **Context Awareness** | Basic | High |
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Python
+* **ML Libraries:** Scikit-learn, PyTorch
+* **Transformers:** HuggingFace Transformers (BERT)
+* **Techniques:** TF-IDF, SVM, Logistic Regression
+
+---
+
+## 🚀 How to Run
+
+### **1. Installation**
+```bash
+pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
+pip install transformers scikit-learn pandas joblib tqdm
