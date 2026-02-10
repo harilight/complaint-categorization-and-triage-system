@@ -51,9 +51,15 @@ The deep learning-based approach focusing on semantic meaning.
 ## 🚀 How to Run
 
 ### **1. Installation**
-```bash
+
 pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 pip install transformers scikit-learn pandas joblib tqdm
-<br/>
 
 
+## 📸 Screenshots
+
+### Terminal Interface
+![Main Menu](assets/terminal_ui.png)
+
+### Spending Visualization
+![Spending Chart](assets/spending_graph.png)
