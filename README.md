@@ -59,8 +59,8 @@ pip install transformers scikit-learn pandas joblib tqdm
 ### Approach 1: SVM
 This model is fast and efficient.
 
-![SVM Diagram](svm_chart.png)  
+![SVM Diagram](images/Screenshot 2026-02-10 163347.png)  
 
 ### Approach 2: BERT
 This model understands context deeply.
-![SVM Diagram](svm_chart.png)  
+![SVM Diagram](images/Screenshot 2026-02-10 162504.png)  
