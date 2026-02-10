@@ -56,11 +56,12 @@ pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://d
 pip install transformers scikit-learn pandas joblib tqdm 
 ```
 
+
 ### Approach 1: SVM
 This model is fast and efficient.
 
-![SVM Diagram](images/Screenshot2026-02-10163347.png)  
+![SVM Diagram](images/Screenshot%2026-02-10%163347.png)  
 
 ### Approach 2: BERT
 This model understands context deeply.
-![SVM Diagram](images/Screenshot2026-02-10162504.png)  
+![SVM Diagram](images/Screenshot%2026-02-10%162504.png)  
