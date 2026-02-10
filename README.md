@@ -1,4 +1,4 @@
-# 🛡️ Customer Complaint Categorization: Classic ML vs. Transformers
+# 🛡️ Customer Complaint Categorization: using SVM(TF-IDF + SVM) and BERT(bert + logistic regression)
 
 An automated NLP pipeline designed to classify customer complaints into specific business categories. This project explores the trade-off between traditional feature engineering (**TF-IDF + SVM**) and modern deep learning embeddings (**BERT + Logistic Regression**).
 
@@ -55,4 +55,5 @@ The deep learning-based approach focusing on semantic meaning.
 pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 pip install transformers scikit-learn pandas joblib tqdm
 <br/>
+
 
