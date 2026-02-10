@@ -51,15 +51,16 @@ The deep learning-based approach focusing on semantic meaning.
 ## 🚀 How to Run
 
 ### **1. Installation**
+```bash
+pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
+pip install transformers scikit-learn pandas joblib tqdm 
+```
 
-'''pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)'''
-'''pip install transformers scikit-learn pandas joblib tqdm```
+### Approach 1: SVM
+This model is fast and efficient.
 
+![SVM Diagram](svm_chart.png)  
 
-## 📸 Screenshots
-
-### Terminal Interface
-![Main Menu](assets/terminal_ui.png)
-
-### Spending Visualization
-![Spending Chart](assets/spending_graph.png)
+### Approach 2: BERT
+This model understands context deeply.
+![SVM Diagram](svm_chart.png)  
