@@ -54,11 +54,5 @@ The deep learning-based approach focusing on semantic meaning.
 ```bash
 pip install torch --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 pip install transformers scikit-learn pandas joblib tqdm
+<br/>
 
-## 🔍 Sample Output (SVM)
-
-![SVM Prediction Output](images/Screenshot 2026-02-10 011454.png)
-
-## 🤖 BERT Output
-
-![BERT Prediction Output](/bert_output.png)
